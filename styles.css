@@ -1,0 +1,188 @@
+body {
+    background-color: #fcf0cc;
+    height: 200vh;
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    padding: 32px;
+}
+
+#menu-button {
+    background: transparent;
+    border: none;
+    font-family: 'destine';
+    font-size: 28px;
+    padding: 32px;
+    transition: transform 0.5s;
+}
+
+#menu-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#menu-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #d3edb9;
+    
+    width: 100vw;
+    height: 0vw;
+    overflow-x: hidden;
+
+    position: fixed;
+    z-index: 1;
+
+    transition: 0.5s;
+}
+
+#contact h2 {
+    font-family: 'destine';
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#contact p {
+    font-family: 'kayonest';
+    font-size: 24px;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    font-family: 'romance_logic';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#links a {
+    margin: 8px;    
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+#links a:visited {
+    color: black;
+}
+
+#links h2 {
+    display: inline;
+}
+
+#nav-bar {
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'destine';
+    animation: slideDown 1s;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+.circular-img {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#center-img {
+    left: 30%;
+    top: 30%;
+    height: 50vmin;
+    width: 50vmin;
+    animation: enlarge 1s;
+}
+
+#left-img {
+    left: 5%;
+    top: 15%;
+    height: 30vmin;
+    width: 30vmin;
+    animation: slideInLeft 1s backwards;
+    transform: traslateX(-400px);
+}
+
+.circular-img:hover {
+    cursor: pointer;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes enlarge {
+    from {
+        transform: scale(0)
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@font-face {
+    font-family: aloevera;
+    src: url(assets/aloevera.ttf);
+}
+
+@font-face {
+    font-family: cheva;
+    src: url(assets/cheva.otf);
+}
+
+@font-face {
+    font-family: destine;
+    src: url(assets/destine.otf);
+}
+
+@font-face {
+    font-family: girlas;
+    src: url(assets/girlas.otf);
+}
+
+@font-face {
+    font-family: kayonest;
+    src: url(assets/kayonest.ttf);
+}
+
+@font-face {
+    font-family: romance_logic;
+    src: url(assets/romance_logic.ttf);
+}
