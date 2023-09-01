@@ -1,0 +1,93 @@
+#logo {
+    width: 64px;
+    height: 64px;
+    padding: 32px;
+}
+
+#menu-button {
+    color: #0656d6;
+    background: transparent;
+    border: none;
+    font-family: 'destine';
+    font-size: 32px;
+    padding: 32px;
+    transition: transform 0.5s;
+}
+
+#menu-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#menu-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #d3edb9;
+    
+    width: 100vw;
+    height: 0vh;
+    overflow-x: hidden;
+
+    position: fixed;
+    z-index: 1;
+
+    transition: 0.5s;
+}
+
+#contact {
+    color: #0656d6;
+}
+
+#contact h2 {
+    font-family: 'destine';
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#contact p {
+    font-family: 'kayonest';
+    font-size: 24px;
+}
+
+#links {
+    color: #0656d6;
+    display: flex;
+    flex-direction: column;
+    font-family: 'romance_logic';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#links a {
+    margin: 8px;    
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+#links a:visited {
+    color: #0656d6;
+}
+
+#links h2 {
+    display: inline;
+}
+
+#nav-bar {
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'destine';
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 16px;
+}

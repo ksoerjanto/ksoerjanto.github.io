@@ -9,180 +9,62 @@ a {
     text-decoration: none;
 }
 
-#logo {
-    width: 50px;
-    height: 50px;
-    padding: 32px;
+#image-1 {
+    position: absolute;
+    object-fit: cover;
+    left: 10vw;
+    top: 10vw;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    padding: 8px;
+    border: 3px solid #0656d6;
+
+    animation: enlarge 2s forwards;
+    animation: borderIn 2s forwards;
 }
 
-#menu-button {
-    background: transparent;
-    border: none;
-    font-family: 'destine';
-    font-size: 28px;
-    padding: 32px;
-    transition: transform 0.5s;
-}
-
-#menu-button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-#menu-overlay {
+#heading {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: baseline;
+    position: absolute;
+    left: 55vw;
+    top: 30vh;
+    font-family: 'aloevera';
+    font-size: 56px;
+    color: #0656d6;
 
-    background-color: #d3edb9;
-    
-    width: 100vw;
-    height: 0vw;
-    overflow-x: hidden;
-
-    position: fixed;
-    z-index: 1;
-
-    transition: 0.5s;
+    animation: slideLeft 1s 1s backwards;
 }
 
-#contact h2 {
-    font-family: 'destine';
-    font-weight: bold;
-    font-size: 48px;
+#hand-wave {
+    padding-left: 8px;
+    animation: wave 2.5s forwards;
+    animation-delay: 1.5s;
 }
 
-#contact p {
-    font-family: 'kayonest';
-    font-size: 24px;
-}
-
-#links {
+#arrow-container {
     display: flex;
     flex-direction: column;
-    font-family: 'romance_logic';
-    font-weight: bold;
-    font-size: 32px;
-}
-
-#links a {
-    margin: 8px;    
-}
-
-#links a:hover {
-    text-decoration: underline;
-}
-
-#links a:visited {
-    color: black;
-}
-
-#links h2 {
-    display: inline;
-}
-
-#nav-bar {
-    width: 100vw;
-    position: fixed;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'destine';
-    animation: slideDown 1s;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    margin-right: 16px;
-}
-
-.circular-img {
+    align-items: center;
     position: absolute;
-    border-radius: 50%;
-    object-fit: cover;
+    left: 65vw;
+    top: 65vh;
+    font-family: 'destine';
+    color: #0656d6;
+    transition: 2s;
 }
 
-#center-img {
-    left: 30%;
-    top: 30%;
-    height: 50vmin;
-    width: 50vmin;
-    animation: enlarge 1s;
+#down-arrow {
+    width: 5vw;
+    animation: pointDown 3s 3.5s;
 }
 
-#left-img {
-    left: 5%;
-    top: 15%;
-    height: 30vmin;
-    width: 30vmin;
-    animation: slideInLeft 1s backwards;
-    transform: traslateX(-400px);
+#luigi {
+    position: absolute;
+    top: 60vh;
+    width: 150px;
+    height: 150px;
+    animation: travelRight 8s infinite;
 }
 
-.circular-img:hover {
-    cursor: pointer;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-200px);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-400px);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes enlarge {
-    from {
-        transform: scale(0)
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-@font-face {
-    font-family: aloevera;
-    src: url(assets/aloevera.ttf);
-}
-
-@font-face {
-    font-family: cheva;
-    src: url(assets/cheva.otf);
-}
-
-@font-face {
-    font-family: destine;
-    src: url(assets/destine.otf);
-}
-
-@font-face {
-    font-family: girlas;
-    src: url(assets/girlas.otf);
-}
-
-@font-face {
-    font-family: kayonest;
-    src: url(assets/kayonest.ttf);
-}
-
-@font-face {
-    font-family: romance_logic;
-    src: url(assets/romance_logic.ttf);
-}

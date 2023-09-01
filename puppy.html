@@ -6,7 +6,51 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="nav.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
+  <!------------ Navigation Bar --------------->
+  <div id="nav-bar" class="slide-down">
+    <a href="/">
+      <img id="logo" src="assets/logo.svg">
+    </a>
+    <button id="menu-button" onclick="toggleMenu()">
+      Menu
+    </button>
+  </div>
+  <div id="menu-overlay">
+    <div id="links">
+      <a href="career.html">
+          about my <h2>work</h2>
+      </a>
+      <a href="hobbies.html">
+          <h2>Fun</h2> things that I do
+      </a>
+      <a href="puppy.html">
+          about my <h2>dog</h2>
+      </a>
+    </div>
+    <div id="contact">
+      <h2>Contact</h2>
+        <p>Karina Soerjanto</p>
+        <p>San Francisco, CA</p>
+        <p>karina.soerjanto@gmail.com</p>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/karina-soerjanto-8b063bb6">
+            <img class="icon" src="assets/linkedin-svgrepo-com.svg">
+          </a>
+          <a href="https://github.com/ksoerjanto">
+            <img  class="icon" src="assets/github-mark.svg">
+          </a>
+        </div>
+      </div>
+  </div>
+
+  <!--------------- Page Content ----------------->
+  <img id="luigi" src="assets/luigi_face.svg">
+  <script src="script.js"></script>
 </body>
+</html>

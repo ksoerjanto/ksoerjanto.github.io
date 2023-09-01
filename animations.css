@@ -1,0 +1,83 @@
+@keyframes slideDown {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slide-down {
+    animation-name: slideDown;
+    animation-duration: 1s;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(120vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes travelRight {
+    from {
+        transform: translateX(-150px);
+    }
+
+    to {
+        transform: translateX(101vw);
+    }
+}
+
+@keyframes wave {
+    0%,
+    40%,
+    80% {
+        transform: rotate(-30deg);
+    }
+
+    20%,
+    60% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes enlarge {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes borderIn {
+    from {
+        padding: 64px;
+    }
+
+    to {
+        padding: 8px;
+    }
+}
+
+@keyframes pointDown {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25%,
+    75% {
+        transform: translateY(20px);
+    }
+}
