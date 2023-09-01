@@ -1,0 +1,7 @@
+#luigi {
+    position: absolute;
+    top: 60vh;
+    width: 150px;
+    height: 150px;
+    animation: travelRight 8s infinite;
+}

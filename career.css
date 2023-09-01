@@ -1,0 +1,102 @@
+a {
+    text-decoration: underline;
+}
+
+.page-content {
+    position: absolute;
+    left: 10vw;
+    top: 20vh;
+}
+
+#heading {
+    color: #0656d6;
+    font-family: 'romance_logic';
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    color: #0656d6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 32px;
+    margin: 24px;
+    border-radius: 20px;
+    max-width: 70vw;
+}
+
+.text {
+    max-width: 70%;
+}
+
+h2 {
+    font-family: 'romance_logic';
+    font-size: 32px;
+}
+
+p {
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.vertical {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.horizontal {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.circular {
+    min-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 8px;
+    border: 3px solid #0656d6;
+}
+
+.align-start {
+    margin-right: 24px;
+}
+
+.align-end {
+    margin-left: 24px;
+}
+
+@media screen and (max-width: 970px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .circular {
+        width: 50vw;
+        height: 50vw;
+        border-radius: 50%;
+    }
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .08em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+  
+  

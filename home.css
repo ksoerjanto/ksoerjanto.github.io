@@ -1,0 +1,71 @@
+#intro-container {
+    display: flex;
+}
+
+#image-1 {
+    object-fit: cover;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    padding: 8px;
+    border: 3px solid #0656d6;
+
+    animation: borderIn 2s, enlarge 2s;
+}
+
+#text-content {
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+#text-content p {
+    font-family: 'destine';
+    font-size: 24px;
+    color: #0656d6;
+
+    animation: fadeIn 1s 3s backwards;
+}
+
+#heading {
+    display: flex;
+    align-items: baseline;
+    font-family: 'aloevera';
+    font-size: 56px;
+    color: #0656d6;
+}
+
+#hand-wave {
+    padding-left: 8px;
+    animation: wave 2.5s infinite;
+    animation-delay: 1.5s;
+}
+
+#arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'destine';
+    color: #0656d6;
+    animation: fadeIn 2.5s 1.5s backwards;
+    transition: 2s;
+}
+
+#down-arrow {
+    width: 5vw;
+    animation: pointDown 3s 1.5s;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Ensures a single line. */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(10, end),
+        blink-caret .75s step-end infinite;
+}
+
+@media screen and (max-width: 500px) {
+    
+}

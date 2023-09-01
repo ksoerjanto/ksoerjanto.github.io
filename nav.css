@@ -1,3 +1,12 @@
+#nav-bar {
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'destine';
+}
+
 #logo {
     width: 64px;
     height: 64px;
@@ -64,25 +73,8 @@
     margin: 8px;    
 }
 
-#links a:hover {
-    text-decoration: underline;
-}
-
-#links a:visited {
-    color: #0656d6;
-}
-
 #links h2 {
     display: inline;
-}
-
-#nav-bar {
-    width: 100vw;
-    position: fixed;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'destine';
 }
 
 .icon {

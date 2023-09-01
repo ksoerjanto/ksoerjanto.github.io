@@ -3,7 +3,7 @@ let image1 = document.getElementById('image-1');
 let downArrow = document.getElementById('arrow-container');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 20 && downArrow) {
         downArrow.style.opacity = '0';
     }
 });
