@@ -22,4 +22,5 @@ a:visited {
     position: absolute;
     left: 10vw;
     top: 25vh;
+    padding-bottom: 24px;
 }
