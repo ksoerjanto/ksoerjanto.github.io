@@ -66,15 +66,16 @@
     flex-direction: column;
     font-family: 'romance_logic';
     font-weight: bold;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 #links a {
-    margin: 8px;    
+    margin: 8px; 
 }
 
 #links h2 {
     display: inline;
+    font-size: 48px;
 }
 
 .icon {
@@ -83,3 +84,42 @@
     border-radius: 10px;
     margin-right: 16px;
 }
+
+.icons a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    #logo {
+        width: 48px;
+        height: 48px;
+        padding: 24px;
+    }
+    
+    #menu-button {
+        font-size: 28px;
+        padding: 24px;
+    }
+
+    #menu-overlay {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact h2 {
+        font-size: 36px;
+    }
+
+    #contact p {
+        font-size: 18px;
+    }
+    
+    #links {
+        font-size: 22px;
+    }
+
+    #link h2 {
+        font-size: 36px;
+    }
+} 
