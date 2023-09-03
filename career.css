@@ -87,8 +87,13 @@ p {
     }
 
     .circular {
-        width: 50vw;
-        height: 50vw;
+        width: 30vw;
+        aspect-ratio: 1 / 1;
         border-radius: 50%;
+    }
+
+    .align-start,
+    .align-end {
+        margin: 0;
     }
 } 

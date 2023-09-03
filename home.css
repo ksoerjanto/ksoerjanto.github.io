@@ -1,29 +1,41 @@
-#intro-container {
+.info-container {
     display: flex;
+    align-items: center;
 }
 
-#image-1 {
+.circular-img {
     object-fit: cover;
     width: 40vw;
-    height: 40vw;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     padding: 8px;
     border: 3px solid #0656d6;
+}
 
+#image-1 {
     animation: borderIn 2s, enlarge 2s;
 }
 
-#text-content {
-    margin-left: 24px;
-    margin-top: 24px;
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
 }
 
-#text-content p {
-    font-family: 'destine';
+.text-container p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 24px;
     color: #0656d6;
+}
 
-    animation: fadeIn 1s 3s backwards;
+#intro-text {
+    margin-left: 24px;
+}
+
+#intro-text p {
+    font-family: 'destine';
+    animation: fadeIn 1s 2s backwards;
 }
 
 #heading {
@@ -32,6 +44,7 @@
     font-family: 'aloevera';
     font-size: 56px;
     color: #0656d6;
+    margin: 0;
 }
 
 #hand-wave {
@@ -46,26 +59,44 @@
     align-items: center;
     font-family: 'destine';
     color: #0656d6;
-    animation: fadeIn 2.5s 1.5s backwards;
+    animation: fadeIn 2.5s 3s backwards;
     transition: 2s;
 }
 
 #down-arrow {
     width: 5vw;
-    animation: pointDown 3s 1.5s;
+    animation: pointDown 3s 1.5s infinite;
 }
 
 .typewriter {
+    width: fit-content;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Ensures a single line. */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .05em; /* Adjust as needed */
     animation: 
-        typing 3.5s steps(10, end),
+        typing 1.5s steps(15, end),
         blink-caret .75s step-end infinite;
 }
 
-@media screen and (max-width: 500px) {
-    
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+    #heading {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #heading {
+        font-size: 32px;
+        padding-top: 16px;
+    }
+
+    #intro-container {
+        flex-direction: column;
+    }
+
+    #intro-text {
+        align-items: center;
+    }
 }

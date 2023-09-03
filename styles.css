@@ -4,6 +4,8 @@ body {
     height: 200vh;
     margin: 0;
     position: relative;  
+    display: flex;
+    justify-content: center;
 }
 
 a {
@@ -19,8 +21,17 @@ a:visited {
 }
 
 .page-content {
-    position: absolute;
-    left: 10vw;
-    top: 25vh;
+    width: 80vw;
+    padding-top: 84px;
     padding-bottom: 24px;
+}
+
+@media screen and (max-width: 800px) {
+    .page-content {
+        position: absolute;
+        width: 80vw;
+        left: 9vw;
+        top: 10vh;
+        padding-bottom: 24px;
+    }
 }

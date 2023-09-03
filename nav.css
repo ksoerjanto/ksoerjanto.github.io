@@ -5,12 +5,13 @@
     display: flex;
     justify-content: space-between;
     font-family: 'destine';
+    background-color: #fcf0cc;
 }
 
 #logo {
     width: 64px;
     height: 64px;
-    padding: 32px;
+    padding-left: 32px;
 }
 
 #menu-button {
@@ -19,7 +20,7 @@
     border: none;
     font-family: 'destine';
     font-size: 32px;
-    padding: 32px;
+    padding-right: 32px;
     transition: transform 0.5s;
 }
 
