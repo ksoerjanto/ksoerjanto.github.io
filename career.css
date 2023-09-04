@@ -28,9 +28,8 @@
     max-width: 70vw;
 
     opacity: 0;
-    transform: translateX(-300px);
-    transition: all 0.7s ease-out;
-    will-change: opacity, transform;
+    transform: translateX(-10vw);
+    transition: all 0.7s;
 }
 
 .text {
