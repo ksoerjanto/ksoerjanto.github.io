@@ -4,20 +4,28 @@ body {
     width: 100vw;
 }
 
+#page-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-family: 'romance_logic';
+  font-size: 2vw;
+  color: #0656d6;
+}
+
 #images-container {
-    position: absolute;
-    left: 10vw;
-    top: 15vh;
     display: flex;
-    gap: 4vmin;
+    justify-content: center;
+    padding-top: 16px;
+    gap: 2vmin;
 }
 
 #images-container img {
     width: 20vw;
-    height: 30vw;
+    height: 60vh;
     object-fit: cover;
     background-color: white;
-    padding: 2vw 2vw 4vw 2vw;
+    padding: 1vw 1vw 4vw 1vw;
 }
 
 #bounce-container,
@@ -49,9 +57,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    #page-header {
+      font-size: 3vw;
+    }
+
     #images-container {
         flex-direction: column;
-        left: 15vw;
+        align-items: center;
     }
 
     #images-container img {
