@@ -28,6 +28,7 @@
 
 .text-container {
     display: flex;
+    width: 50vw;
     flex-direction: column;
     align-content: start;
     justify-content: center;
@@ -98,8 +99,13 @@
         padding-top: 16px;
     }
 
+    .circular-img {
+        width: 60vw;
+    }
+
     .info-container {
         flex-direction: column;
+        height: 50vh;
     }
 
     .text-container {
