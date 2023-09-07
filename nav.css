@@ -14,7 +14,7 @@
     padding-left: 32px;
 }
 
-#menu-button {
+.menu-button {
     color: #0656d6;
     background: transparent;
     border: none;
@@ -24,7 +24,7 @@
     transition: transform 0.5s;
 }
 
-#menu-button:hover {
+.menu-button:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -97,7 +97,7 @@
         padding: 24px;
     }
     
-    #menu-button {
+    .menu-button {
         font-size: 28px;
         padding: 24px;
     }

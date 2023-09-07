@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.remove('scroll-animations');
         }
     });
-}, { threshold: 0.4 });
+}, { threshold: 0.5 });
 
 for (let i = 0; i < cards.length; i++) {
     const elements = cards[i];

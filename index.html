@@ -18,7 +18,7 @@
     <a href="/">
       <img id="logo" src="assets/logo.svg">
     </a>
-    <button id="menu-button" onclick="toggleMenu()">
+    <button class="menu-button" onclick="toggleMenu()">
       Menu
     </button>
   </div>
@@ -68,11 +68,28 @@
       </div>
     </div>
 
-    <div id="about-container" class="info-container">
-      <div id="about-text" class="text-container">
-        <p>I have loved puzzles and problem solvings from a young age. Two of my favorite games growing up were chess and sudoku.</p>
+    <div class="info-container">
+      <div class="text-container">
+        <p>Growing up in Bali, Indonesia, I had little exposure to careers in STEM but I had always been interested in puzzle and logic games. Two of my favorite games were (and still are!) chess and sudoku.</p>
       </div>
-      <img id="image-2" class="circular-img" src="assets/bali.JPG">
+      <img id="image-2" class="circular-img" src="assets/chess.JPG">
+    </div>
+
+    <div class="info-container">
+      <img class="circular-img" src="assets/working.JPG">
+      <div class="text-container">
+        <p>For the past 6+ years, I've had the blessing to apply that passion into my career -- and I hope to continue to learn new concepts and technologies to become a better Software Engineer.</p>
+      </div>
+    </div>
+
+    <div style="justify-content: center;" class="info-container">
+      <div style="align-items: center;" class="text-container">
+        <p>So, let's connect!</p>
+        <img id="down-arrow" src="assets/arrow.svg">
+        <button class="menu-button" style="padding-top: 1vh;" onclick="toggleMenu()">
+          Contact me
+        </button>
+      </div>
     </div>
   </div>
   <script src="home.js"></script>
