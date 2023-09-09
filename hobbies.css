@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    padding: 2vmin;
+    border-radius: 10px;
+    width: 40vmin;
+    height: 60vmin;
+    position: absolute;
+    transform-origin: center 200%;
+    box-shadow: 0 2px 2px 0 #001f9c;
+}
+
+.card:nth-child(1) {
+  animation: rotate20 1s forwards;
+}
+
+.card:nth-child(2) {
+  animation: rotate10 1s forwards;
+}
+
+.card:nth-child(3) {
+  transform: rotate(0deg) forwards;
+}
+
+.card:nth-child(4) {
+  animation: rotateMinus10 1s forwards;
+}
+
+.card:nth-child(5) {
+  animation: rotateMinus20 1s forwards;
+}
+
+.card:hover {
+  z-index: 1;
+}
+
+.img-stack {
+  width: 40vmin;
+  height: 60vmin;
+  object-fit: contain;
+}
+
+.text-overlay {
+  font-family: 'kayonest';
+  color: #0656d6;
+  position: absolute;
+  bottom: 5%;
+  width: 40vmin;
+  background-color: white;
+  padding: 4px;
+}
+
+@keyframes rotate20 {
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes rotate10 {
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes rotateMinus10 {
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes rotateMinus20 {
+  100% {
+    transform: rotate(-20deg);
+  }
+}

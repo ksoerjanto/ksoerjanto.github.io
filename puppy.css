@@ -4,19 +4,9 @@ body {
     width: 100vw;
 }
 
-#page-header {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  font-family: 'romance_logic';
-  font-size: 2vw;
-  color: #0656d6;
-}
-
 #images-container {
     display: flex;
     justify-content: center;
-    padding-top: 16px;
     gap: 2vmin;
 }
 
@@ -57,10 +47,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    #page-header {
-      font-size: 3vw;
-    }
-
     #images-container {
         flex-direction: column;
         align-items: center;

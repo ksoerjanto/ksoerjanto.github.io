@@ -27,6 +27,17 @@ a:visited {
     padding-bottom: 24px;
 }
 
+.page-header {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 24px;
+    font-family: 'romance_logic';
+    font-style: oblique;
+    font-size: 2vw;
+    color: #0656d6;
+}
+
 @media screen and (max-width: 800px) {
     .page-content {
         position: absolute;
@@ -34,5 +45,9 @@ a:visited {
         left: 9vw;
         top: 10vh;
         padding-bottom: 24px;
+    }
+
+    .page-header {
+        font-size: 3vw;
     }
 }
